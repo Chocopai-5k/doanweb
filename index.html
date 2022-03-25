@@ -1,12 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="access/css/main.css">
+    <link rel="stylesheet" href="access/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="access/icon/fontawesome-free-6.0.0-web/css/all.css">
+    <script src="main.js"></script>
     <title>Web âm nhạc</title>
 </head>
+
 <body>
+    <div class="app">
+        <div class="grid">
+
+            <header class="header">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-img"><img src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="Logo" ></li>
+                        <li class="header__navbar-item">Bài hát</li>
+                        <li class="header__navbar-item">Playlist</li>
+                        <li class="header__navbar-item">Tuyển tập</li>
+                        <li class="header__navbar-item">Video</li>
+                        <li class="header__navbar-item">BXH</li>
+                        <li class="header__navbar-item">Top 100</li>
+                        <li class="header__navbar-item--menu">...
+                            <ul class="header__navbar-list--menu">
+                                <li class="header__navbar-list--menu-item">
+                                    Khám phá
+                                </li>
+                                <li class="header__navbar-list--menu-item">
+                                    Nghệ sĩ
+                                </li>
+                                <li class="header__navbar-list--menu-item">
+                                    Tin tức âm nhạc
+                                </li>
     
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-item-search">
+                                <i class="fa-solid fa-magnifying-glass header__navbar-icon-search"></i>
+                                <input type="text" class="header__navbar-item--input" placeholder="Tìm kiếm">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="fa-solid fa-store header__navbar-icon"></i>
+                        </li>
+                        <li class="header__navbar-item header__navbar-icon">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-signin">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-signup">
+                                Đăng kí
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </header>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="container__img">
+                    <img src="access/css/img/img01.jpg" alt="" width="80%">
+                </div>
+                <div class="grid__row">
+                    <div class="grid__column-9">
+                        <div class="music-product">
+                            <h1 class="music-product__heading">CHUYẾN TÀU THANH XUÂN</h1>
+                            <!-- Grid -> row -> column -->
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="access/css/img/tivi01.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Nhạc Quốc Tế Bất Hủ (Vol. 1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="access/css/img/tivi02.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Nhạc Quốc Tế Bất Hủ (Vol. 2)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="access/css/img/kim-dung.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Phim Kiếm Hiệp Kim Dung Hay Nhất</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="access/css/img/thap-nien-90.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">10 Tình Khúc Hay Nhất Thập Niên 90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="access/css/img/hoa-ngu.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Nhạc Phim Hoa Ngữ Hay Nhất Mọi Thời Đại</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="music-product__heading">KHÂU VỊ ÂM NHẠC</h1>
+                            <!-- Grid -> row -> column -->
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/playlist/2021/10/04/7/7/c/2/1633319132840_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">K-Candy</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/08/20/d/a/f/7/1597914328413_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Disco Pop</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/playlist/2022/03/24/9/b/7/f/1648095103309_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Cà Phê Đến Tối</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/playlist/2021/10/04/7/7/c/2/1633332395107_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">J-Jams</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/02/06/f/6/e/7/1580983133950_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Love Love Love (Vol. 1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h1 class="music-product__heading">MỚI PHÁT HÀNH
+                                <i class="fa-solid fa-angle-right"></i>
+                            </h1>
+                            <!-- Grid -> row -> column -->
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2022/01/12/f/c/b/f/1641968755745_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Có Em Đây</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2022/03/04/5/9/c/8/1646385790631_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Chân Mây</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2022/03/13/c/3/3/4/1647131665355_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Vì Một Người</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2022/01/13/4/f/a/f/1642057093841_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Khóc Cười</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div href="" class="music-product-item">
+                                        <div class="music-product__item-img">
+                                            <span class="music-product__item-icon">
+                                                <i class="fa-regular fa-circle-play music-product__item-icon-play"></i>
+                                            </span>
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2022/03/20/3/4/8/8/1647737862803_300.jpg" alt="" class="music-product__img">
+                                        </div>
+                                        <div class="music-product__item-name">
+                                            <span class="music-product__item-description">Hứa Quay Lại Mà Không Quay Lại</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-3">
+                        <div class="music-trending">
+                            <h1 class="music-product__heading">BXH BÀI HÁT
+                                <i class="fa-regular fa-circle-play"></i>
+                            </h1>
+                            <div class="music-trending-filter">
+                                    <a href="" class=" music-trending-filter-link--active">
+                                        Việt Nam
+                                    </a> 
+                                    <span> </span>
+                                    <a href="" class="music-trending-filter-link">
+                                        Âu Mỹ
+                                    </a> 
+                                    <span> </span>
+                                    <a href="" class="music-trending-filter-link">
+                                        Hàn Quốc
+                                    </a>
+                            </div>
+                            <ul class="music-trending--list">
+                                <li class="music-trending--item-special">
+                                        <div class="music-trending--item-img">
+                                            <img src="access/css/img/Erik.jpg" alt="Erik" class="music-trending__img">
+                                            <span class="one">1</span>
+                                        </div>
+                                        <div class="item-info">
+                                            <p class="item-name-song">Yêu Đương Khó Quá Thì Chạy Về Khóc Với Anh</p>
+                                            <p class="item-name-singer">ERIK</p>
+                                        </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number two">2</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Đế Vương</p>
+                                        <p class="item-name-singer">Đình Dũng</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number three">3</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Chạy Về Nơi Phía Anh</p>
+                                        <p class="item-name-singer">Khắc Việt</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">4</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Hoa Tàn Tình Tan</p>
+                                        <p class="item-name-singer">Giang Jolee</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number ">5</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Là Do Em Xui Thôi</p>
+                                        <p class="item-name-singer">Châu Đăng Khoa</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">6</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Tìm Được Nhau Khó Thế Nào (Original Movie Soundtrack From "Chìa Khóa Trăm Tỷ”)</p>
+                                        <p class="item-name-singer">Anh Tú</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">7</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Sài Gòn Đau Lòng Quá</p>
+                                        <p class="item-name-singer">Hứa Kim Tuyền</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">8</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Có Em Đây</p>
+                                        <p class="item-name-singer">Dunghoangpham</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">9</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Câu Hẹn Câu Thề</p>
+                                        <p class="item-name-singer">Đình Dũng</p>
+                                    </div>
+                                </li>
+                                <li class="music-trending--item">
+                                    <span class="number">10</span>
+                                    <div class="item-info">
+                                        <p class="item-name-song">Câu Hứa Chưa Vẹn Tròn</p>
+                                        <p class="item-name-singer">Anh Tú</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+        <!-- Hover icon -->
+
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,66 @@
+:root {
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --primary-color: #2daaed;
+    
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Test */
+.grid__column-3 {
+
+    width: 25%;
+}
+.grid__column-2-4 {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    width: 20%;
+}
+.grid__column-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 75%;
+}
+/* Hover icon */
+.music-product__item-icon {
+    position: absolute;
+    display: none;
+    top: 35%;
+    left: 34%;
+    animation: fadeIn linear .3s;
+
+}
+.music-product__item-icon-play {
+    font-size: 50px;
+    color: var(--white-color);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
