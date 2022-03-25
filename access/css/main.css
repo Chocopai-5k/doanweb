@@ -78,7 +78,9 @@ html {
     display: flex;
     align-items: center;
     color: #929292;
+    position: relative;
 }
+
 .header__navbar-item--input {
     outline: none;
     border: none;
@@ -92,6 +94,12 @@ html {
 }
 .header__navbar-icon {
     color: var(--primary-color);
+}
+/* Search history */
+.header__navbar-search-history {
+    position: absolute;
+    top: 100%;
+       
 }
 .header__navbar-icon:hover {
     opacity: 0.8;
@@ -147,6 +155,10 @@ html {
     font-size: 1.4rem;
     font-weight: 400;
     width: 80%;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .music-product__item-img:hover {
     opacity: 0.9;
