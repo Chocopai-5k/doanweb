@@ -5,13 +5,17 @@
 html {
 }
 /* Header */
+
 .header {
-    margin-top: 10px;
-    height: 56px;
+    height: 50px;   
+    background-color: var(--white-color); 
+    /* z-index: 2; */
 }
 .header__navbar {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
+
 }
 .header__navbar-list{
     display: flex;
@@ -107,6 +111,7 @@ html {
     background-color: var(--white-color);
     border-radius: 4px;
     display: none;
+    border: 1px solid #e2e2e2;
 }
 .top-search {
     font-size: 1.5rem;
@@ -171,7 +176,7 @@ html {
     padding: 8px 16px;
     text-decoration: none;
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 400;
     display: block;
     background-image: linear-gradient(60deg , #2887ed, #05a8ee);
 }
@@ -182,6 +187,7 @@ html {
 
 .container__img {
     text-align: center;
+    margin-bottom: 32px;
 }
 .music-product__heading {
     color: var(--primary-color);
@@ -351,3 +357,88 @@ html {
     color: #f39c12;
 }
 /* Auth form */
+.form-signup {
+    margin: 30px;
+}
+.form-signup__header {
+    margin: 12px ;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+
+}
+.form-signup__heading-icon {
+    color: #565656;
+    cursor: pointer;
+    padding: 5px;
+}
+.form-signup__heading-icon:hover {
+    background-color: #e2e2e2;
+}
+.form-signup__warning {
+    float: right;
+    color: #B0B0B0;
+    font-size: 1.2rem;
+    padding: 12px ;
+}
+.form-signup__form {
+    margin: 40px 30px;
+}
+.form-signup__form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-signup__name {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 8px 12px 8px 0;
+    font-weight: 400;
+}
+.form-signup__input {
+    margin: 4px 0;
+    font-size: 1.8rem;
+    height: 32px;
+    padding: 18px;
+    border: 1px solid #cfcfcf;
+    outline: none;
+    border-radius: 2px;
+}
+.form-signup__input:focus {
+    border: 1px solid #929292;
+}
+.form-signup__aside {
+}
+.box-checkbox {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-signup__aside-text {
+    margin-left: 2px;
+}
+.form-signup__aside-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 2px;
+}
+.form-signup__btn {
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 2px;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    padding: 12px 88px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    background-image: linear-gradient(30deg, #05a8ee, #2887ed);
+}
+.btn:hover {
+    opacity: 0.8;
+}

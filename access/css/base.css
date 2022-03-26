@@ -73,3 +73,31 @@ html {
     }
 }
 /* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn linear .3s;
+    display: flex;
+    visibility:hidden;
+    z-index: 2;
+
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__body {
+    margin: 60px auto auto;
+    z-index: 3;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    animation: growth linear .3s;
+}
+.modal__inner {
+
+}
