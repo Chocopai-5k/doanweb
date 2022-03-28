@@ -23,12 +23,15 @@
 
 <body>
     <div class="app">
-        <div class="grid">
-            <header class="header">
+        <header id="header" class="header">
+            <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item-img"><img
-                                src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="Logo"></li>
+                        <li class="header__navbar-item header__navbar-item-img">
+                            <a href="">
+                                <img src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="Logo" class="logo"></li>
+
+                            </a>
                         <li class="header__navbar-item--menu header__navbar-item">Bài hát
                             <ul class="header__navbar-list--menu">
                                 <li class="header__navbar-list--menu-item">
@@ -260,11 +263,9 @@
                     </ul>
 
                 </nav>
-            </header>
-        </div>
-        <div style="width: 100%; border:1px solid #dadada;">
-
-        </div>
+            </div>
+        </header>
+        
         <div class="container">
             <div class="grid">
                 <div class="container__img">
@@ -1361,7 +1362,6 @@
                             <span class="form-signup__name">
                                 Tên đăng nhập
                                 <span class="required">*</span>
-
                             </span>
                             <input type="text" class="form-signup__input">
                         </div>
@@ -1369,15 +1369,36 @@
                             <span class="form-signup__name">
                                 Mật khẩu
                                 <span class="required">*</span>
-
                             </span>
                             <input type="password" class="form-signup__input">
                         </div>
-                       
+                        <div class="pass-active">
+                            <div class="remember">
+                                <label class="switch">
+                                  <input type="checkbox" checked> 
+                                  <span class="slider round"></span>
+                                </label>
+                                <span class="remember-pass">Nhớ mật khẩu</span>
+                              </div>
+                              <a href="" class="forgot-pass">Quên mật khẩu</a>
+
+                        </div>
                     <div class="form-signup__btn">
-                        
                         <button class="btn">Đăng nhập</button>
                     </div>
+                    <p class="or">OR</p>
+                    <div class="connect-social">
+                        <button class="social-btn">
+                            <i class="fa-brands fa-facebook"></i>
+                            Connect with Facebook
+                        </button>
+                    </div>
+                    <div class="connect-social">
+                        <button class="social-btn">
+                            <i class="fa-brands fa-google"></i>
+                            Connect with Google</button>
+                    </div>
+
                 </div>
             </div>
         </div>
