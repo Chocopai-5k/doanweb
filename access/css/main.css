@@ -310,6 +310,7 @@ html {}
 .view-song {}
 
 /* Filter */
+.mv-trending-filter,
 .music-trending-filter {
     display: flex;
     list-style: none;
@@ -319,22 +320,21 @@ html {}
     padding-left: 10px;
     justify-content: flex-start;
     overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
 
 }
-
-.music-trending-filter-link--active {
+.mv-trending-filter-link.active,
+.music-trending-filter-link.active {
     color: var(--white-color);
     background-color: #e74c3c;
     text-decoration: none;
     color: var(--white-color);
-    padding: 0 16px;
     line-height: 32px;
     font-size: 1.4rem;
     font-weight: 400;
-    border-bottom-left-radius: 40px;
-    border-top-left-radius: 40px;
 }
-
+.mv-trending-filter-link,
 .music-trending-filter-link {
     text-decoration: none;
     display: block;
@@ -344,44 +344,44 @@ html {}
     line-height: 32px;
     padding: 0 20px;
     background-color: #e5e5e5;
-
+    
 }
-
+.mv-trending-filter-link:hover,
 .music-trending-filter-link:hover {
     color: var(--white-color);
     background-color: #e74c3c;
 }
-
+.mv-trending-filter span,
 .music-trending-filter span {
     height: 32px;
     width: 1px;
     background: #e5e5e5;
 }
-
-.music-trending-filter-link:last-child {
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
-}
-
+.mv-trending--list,
 .music-trending--list {
     margin-top: 20px;
     list-style: none;
-
+    display: none;
+}
+.mv-trending--list.active,
+.music-trending--list.active {
+    display: block;
 }
 
 /* Special */
+.mv-trending--item-special,
 .music-trending--item-special {
     display: flex;
     padding-bottom: 12px;
     border-bottom: 1px solid #f3f3f3;
     margin-top: 12px;
 }
-
+.mv-trending--item-img,
 .music-trending--item-img {
     position: relative;
 
 }
-
+.mv-trending--list,
 .music-trending--list {
     margin-left: 8px;
 }
@@ -389,13 +389,10 @@ html {}
 .music-trending__img {
     width: 96px;
     height: 96px;
-
 }
-
 .mv-trending__img {
     width: 112px;
 }
-
 .item-info {
     margin-left: 10px;
     font-size: 1.4rem;
@@ -404,7 +401,6 @@ html {}
     line-height: 1.6rem;
 
 }
-
 .item-name-singer {
     font-size: 1.2rem;
     margin-top: 4px;
@@ -412,7 +408,6 @@ html {}
     color: #929292;
 
 }
-
 .item-name-song {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -420,7 +415,6 @@ html {}
     overflow: hidden;
     margin-bottom: 4px;
 }
-
 .top {
     position: absolute;
     font-size: 2.2rem;
@@ -430,26 +424,21 @@ html {}
     left: 0;
     padding: 8px 12px;
 }
-
 .one {
 
     background-color: #e74c3c;
 }
-
 .two {
     color: var(--primary-color);
 }
-
 .three {
     color: #f39c12;
 }
-
 .item-name-singer:hover,
 .item-name-song:hover {
     color: var(--primary-color);
     cursor: pointer;
 }
-
 .music-trending--item {
     display: flex;
     align-items: center;
