@@ -321,7 +321,7 @@ html {}
     justify-content: flex-start;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
 
 }
 .mv-trending-filter-link.active,
