@@ -97,6 +97,7 @@ html {}
     align-items: center;
     color: #929292;
     position: relative;
+    
 }
 
 .header__navbar-item--input {
@@ -113,12 +114,14 @@ html {}
 }
 
 .header__navbar-icon {
+    font-size: 1.8rem;
     color: var(--primary-color);
 }
 
 /* Search history */
 .header__navbar-item--input:focus~.header__navbar-search-history {
     display: block;
+
 }
 
 .header__navbar-search-history {
@@ -220,11 +223,52 @@ html {}
     width: 100%;
 }
 
-.container__img {
-    text-align: center;
-    margin-bottom: 32px;
+.mySlides {
+    display: none};
+img {
+    vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 1000px;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
 .music-product__heading {
     color: var(--primary-color);
     font-size: 2.4rem;
@@ -306,10 +350,8 @@ html {}
 .number-view {
     font-size: 1.8erm;
 }
-
-.view-song {}
-
 /* Filter */
+
 .mv-trending-filter,
 .music-trending-filter {
     display: flex;
@@ -322,7 +364,6 @@ html {}
     overflow: hidden;
     cursor: pointer;
     border-radius: 6px;
-
 }
 .mv-trending-filter-link.active,
 .music-trending-filter-link.active {
@@ -375,6 +416,8 @@ html {}
     padding-bottom: 12px;
     border-bottom: 1px solid #f3f3f3;
     margin-top: 12px;
+    background-color: var(--white-color);
+
 }
 .mv-trending--item-img,
 .music-trending--item-img {
@@ -439,11 +482,13 @@ html {}
     color: var(--primary-color);
     cursor: pointer;
 }
+
 .music-trending--item {
     display: flex;
     align-items: center;
     padding: 12px 0;
     border-bottom: 1px solid #f3f3f3;
+    background-color: var(--white-color);
 
 }
 
