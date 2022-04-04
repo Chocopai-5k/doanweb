@@ -121,7 +121,6 @@ html {}
 /* Search history */
 .header__navbar-item--input:focus~.header__navbar-search-history {
     display: block;
-
 }
 
 .header__navbar-search-history {
@@ -801,4 +800,54 @@ input:checked+.slider:before {
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 500;
+}
+/* Song.html */
+.menu__dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c7c7c7;
+}
+.menu-head {
+    padding-top: 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+    flex: 1;
+}
+.menu-item {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 12px;
+    flex: 1;
+
+}
+.menu-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+/* Page filter */
+.page-filter{
+    margin-top: 40px;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.page-filter__list{
+    display: flex;
+    align-items: center;
+}
+.page-filter--item{
+    font-size: 1.4rem;
+    padding: 12px 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+.page-filter--item:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
