@@ -721,7 +721,6 @@ input:checked+.slider:before {
 }
 /* Footer */
 .footer {
-    /* margin-top: 72px; */
     background-color: #f5f5f5;
 }
 
@@ -830,7 +829,7 @@ input:checked+.slider:before {
 }
 /* Page filter */
 .page-filter{
-    margin-top: 40px;
+    margin: 20px 0;
     background-color: #e5e5e5;
     display: flex;
     justify-content: center;
