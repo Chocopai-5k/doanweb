@@ -45,6 +45,7 @@ li {
     width: 20%;
 }
 .grid__column-2 {
+     padding-left: 10px;
     width: 15%;
 }
 .grid__column-4 {
