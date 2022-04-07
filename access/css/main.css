@@ -294,7 +294,6 @@ img {
 
 .music-product__item-name:hover {
     color: var(--primary-color);
-
 }
 
 .music-product__item-description {
@@ -742,7 +741,6 @@ input:checked+.slider:before {
 
 .menu-item--name:hover {
     cursor: pointer;
-    color: var(--primary-color);
 }
 
 .space {
