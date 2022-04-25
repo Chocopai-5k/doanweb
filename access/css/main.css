@@ -794,3 +794,8 @@ img {
     color: var(--white-color);
     background-color: var(--primary-color);
 }
+/* Error Message */
+.errorMessage {
+    display: none;
+    margin-left: 107px;
+}
